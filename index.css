@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+
+body{
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 2%;
+    column-gap: 20%;
+    margin-bottom: 5%;
+}
+
+.menu-container .menu-item{
+    width: 41px;
+    height: 2px;
+    background-color: white;
+
+}
+
+.menu-container{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container h1{
+    color: white;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 2;
+}
+
+.button-container button{
+    font-size: 16px;
+    padding: 8px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    border-radius: 48px;
+    background: transparent;
+    color: white;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text h1{ 
+    position: relative;
+    text-align: center;
+    font-size: 64px;
+    max-width: 100%;
+    right: 5%;
+    font-family: 'Figtree', sans-serif;
+    color: white;
+}
+
+.banner-img img{
+    position: relative;
+    z-index: -1;
+    max-width: 100%;
+    width: 800px;
+    right: 7%;
+    margin-top: 50px;
+
+}
+
+.main-book{
+    display: inline-flex;
+    color: black;
+    padding: 30px 28px;
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 16px;
+    box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03), 0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+    backdrop-filter: blur(14px);
+    gap: 1rem;
+    
+    
+}
+
+.main-book-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 4.5rem;
+    z-index: 1;
+}
+
+
+.main-book .book-holder input{
+    display: flex;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    font-weight: 400;
+}
+
+
+.book-placeholder{
+    position: relative;
+}
+
+.book-placeholder input{
+    width: 15.7rem;
+    text-indent: 10%;
+}
+
+.book-placeholder::before{
+    content: "";
+    background-image: url("/img/Location.svg");
+    background-size: cover;
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    align-self: baseline;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+.black-button{
+    border-radius: 64px;
+    background: #0F0F0F;  
+    color: #FFF;  
+    font-size: 16px;
+    padding: 16px 24px;
+    align-items: center;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+
+.main-book .book-holder p{
+    padding-bottom: 0.62rem;
+}
+
+.main-collection{
+    position: relative;
+    background: #F5F5F5;
+
+}
+
+.main-collection .info-collection{
+    padding-top: 10%;
+    text-align: center;
+
+}
+
+.cars-collection{
+    display: grid;
+    grid-template-columns: 28rem 28rem 28rem;
+    grid-template-rows: 33.625rem 33.625rem;
+    place-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+
+}
+
+
+.cars-card{
+    width: 24rem;
+    height: 32rem;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #FFF;
+    margin-bottom: 2rem;
+    
+}
+
+.cars-card .main-img{
+    width: 368px;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    padding: 10px 2px 10px 2px;
+    border-radius: 1.5rem;
+    transform: translate3d(0px, 0px, 0.1px);
+    
+}
+
+.cars-card:nth-child(2) img, .cars-card:nth-child(6) img{
+    transform: scaleX(-1) translate3d(0px, 0px, 0.1px);
+   
+}
+
+.cars-des-price{
+    padding-left:6%;
+}
+
+.cars-des-price p{
+    font-size: 1.3rem;
+    margin: 12px 0px 12px 0px;
+}
+
+.cars-des-price h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.cars-des-price span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.50);;
+}
+
+.selectors-collection{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.selectors-collection button{
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 0.75rem 1.19rem;
+    background: #FFF;
+    border-radius: 3.625rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+}
+
+.selectors-collection .active{
+    background-color: #0F0F0F;
+    color: #FFF;
+}
+
+
+.card-infos{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 10%;
+    background: #F6F6F6;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    width: 21rem;
+    margin: 0 auto;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.38rem;
+}
+
+.card-info img{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.cars-card button{
+    display: flex;
+    width: 21rem;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background: transparent;
+    margin: 1rem auto 0px auto;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.collection-button{
+    margin: 0 auto 5rem auto;
+}
+
+.how-main-container{
+    background-color: #FFF;
+    padding-top: 5rem;
+}
+
+.how-top-section{
+    text-align: center;
+}
+
+.how-top-section h1{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.how-main-container p{
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.how-sections-middle{
+    display: inline-flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    grid-auto-rows: 200px;
+    place-items: center;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.how-sections-middle .item-one,.how-sections-middle .item-two,.how-sections-middle .item-three{
+    width: 37rem;
+    height: 10.625rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    z-index: 2;
+    margin-right: 10rem;
+    display: flex;
+    align-items: center;
+  
+}
+
+.item-one{
+    margin-top: 2.2rem;
+}
+
+.how-img-container{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    right: 20rem;
+    width: 46.25rem;
+    height: 39.875rem;
+    flex-shrink: 0;     
+    border-radius: 1.5rem;
+    background: #F5F5F5;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-img-container img{
+    width: 34.0625rem;
+    height: 22.4375rem;
+    flex-shrink: 0;
+    position: relative;
+    left: 4rem;
+    
+}
+
+.how-item-box{
+    width: 3.375rem;
+    height: 6.625rem;
+    border-radius: 1rem;
+    background: #F5F5F5;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-item .item-text h2, .how-item .item-text p{
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.main-container-services{
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+}
+
+.main-container-services .text-services{
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.text-services h1{
+    font-size: 3rem;
+}
+
+.text-services p{
+    font-size: 1.125rem;
+    padding-top: 1.5rem;
+}
+
+.features-services{
+    width: 80rem;
+    display: flex;
+    position: relative;
+    left: 2.8rem;
+}
+
+.feature-services{
+    text-align: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-services h4{
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+.feature-services p{
+    font-size: 1rem;
+    margin-bottom: 4rem;
+}
+
+.round-services{
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.75rem;
+    border: 5px solid rgb(232, 232, 232);
+    background: #FFF;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 1rem 0;
+}
+
+.feature-services .round-services svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.features-services-main-contaier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.review-container-main{
+    padding: 5rem 25rem 5rem 25rem;
+}
+
+.review-top-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.review-top-section h1{
+    font-size: 2.5rem;
+}
+
+.review-mid-section{
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.review-end-section{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review-round-black{
+    display: flex;
+    background-color: #0F0F0F;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-round-white{
+    display: flex;
+    background-color: #FFF;;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem ;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem #C0C0C0 solid;
+}
+
+.review-round-white img{
+    transform: scaleX(-1);
+    width: 24px;
+    height: 24px;
+}
+
+.review-round-black img{
+    width: 24px;
+    height: 24px;
+}
+.review-arrows{
+    display: flex;
+    gap: 1rem;
+}
+
+.mobile-app-container{
+    background-color: #0F0F0F;
+    color: #FFF;
+    display: flex;
+    padding: 10rem;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.mobile-app-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.mobile-app-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.mobile-app-top h1{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.mobile-app-top p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.80);
+}
+
+.mobile-app-button{
+    display: flex;
+    background-color: #FFFFFF;
+    color: #0F0F0F;
+    padding: 1rem 1.4rem 1rem 1.2rem;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mobile-app-button-text-small{
+    font-size: 0.7rem;
+    font-weight: bolder;
+
+}
+
+.mobile-app-button-text-big{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.footer{
+    background-color: #0F0F0F;
+    color: #FFF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer nav ul{
+    display: flex;
+    gap: 1.5rem;
+
+}

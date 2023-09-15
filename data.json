@@ -1,0 +1,56 @@
+[
+    {
+       "imgSrc": "img/A210286_large-1024x683.jpg",
+       "name": "Audi E-tron",
+       "price": "129",
+       "speed": "4,000",
+       "transmission": "Auto",
+       "capacity": "4 person",
+       "fuelType": "Electric"
+    },
+    {
+        "imgSrc": "img/7yzvPRrGBPeMCfshtywz9E-ed934cf5c54506defe3e3bf654976b02-BMW-M3-Frontview-1100.jpg",
+        "name": "BMW M4",
+        "price": "399",
+        "speed": "3,850",
+        "transmission": "Auto",
+        "capacity": "4 person",
+        "fuelType": "Benzine"
+     },
+     {
+        "imgSrc": "img/rijtest_mercedes_eqe_suv_2023_1.jpg",
+        "name": "Mercedes EQL SUV",
+        "price": "449",
+        "speed": "8,500",
+        "transmission": "Auto",
+        "capacity": "5 person",
+        "fuelType": "Electric"
+     },
+     {
+        "imgSrc": "img/porsche-911-992__1_.jpg",
+        "name": "Porsche 911",
+        "price": "249",
+        "speed": "10,500",
+        "transmission": "Auto",
+        "capacity": "4 person",
+        "fuelType": "Benzine"
+     },
+     {
+        "imgSrc": "img/RX-500h-Heat-Saphire-Blue-001-scaled.jpg",
+        "name": "Lexus RX",
+        "price": "199",
+        "speed": "19,500",
+        "transmission": "Auto",
+        "capacity": "5 person",
+        "fuelType": "Benzine"
+     },
+     {
+        "imgSrc": "img/my23-ram-trx-02-gallery-07.jpg.i.jpg",
+        "name": "Dodge RAM",
+        "price": "249",
+        "speed": "16,500",
+        "transmission": "Auto",
+        "capacity": "6 person",
+        "fuelType": "Benzine"
+     }
+ ]
